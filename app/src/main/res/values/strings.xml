@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tutorial AV1</string>
+
+    <!--  Activity/Login  -->
+    <string name="login_title">Login</string>
+    <string name="login_user">Usuário</string>
+    <string name="login_password">Senha</string>
+    <string name="login_button_primary">Entrar</string>
+    <string name="login_button_secondary">Cadastre-se</string>
+</resources>

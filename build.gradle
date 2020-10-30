@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.3.72"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    final recyclerViewVersion = '1.2.0-alpha06'
+
+    final kotlinVersion = '1.3.72'
+    final ktxVersion = '1.3.2'
+    final androidxVersion = '1.1.0'
+    final materialVersion = '1.2.1'
+    final constraintLayoutVersion = '2.0.2'
+    final fragmentVersion = '1.2.5'
+
+
+    androidDependencies = [
+            kotlin  : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+
+            androidx: [
+                    "androidx.appcompat:appcompat:$androidxVersion",
+                    "androidx.core:core-ktx:$ktxVersion",
+                    "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+                    "androidx.fragment:fragment-ktx:$fragmentVersion",
+                    "com.google.android.material:material:$materialVersion",
+                    "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+            ]
+    ]
+}
