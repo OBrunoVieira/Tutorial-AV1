@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="@string/login_title"
-        android:textSize="48sp" />
+        android:textSize="40sp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
@@ -28,6 +28,7 @@
         android:inputType="textPassword" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button_primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -35,9 +36,10 @@
         android:text="@string/login_button_primary" />
 
     <TextView
+        android:id="@+id/login_button_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:padding="8dp"
         android:text="@string/login_button_secondary"
         android:textColor="@color/colorAccent"
         android:textStyle="bold" />

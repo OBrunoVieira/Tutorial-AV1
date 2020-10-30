@@ -7,4 +7,28 @@
     <string name="login_password">Senha</string>
     <string name="login_button_primary">Entrar</string>
     <string name="login_button_secondary">Cadastre-se</string>
+
+    <!--  Activity/Register  -->
+    <string name="register_back_content_description">Voltar</string>
+    <string name="register_title">Cadastro</string>
+    <string name="register_name">Nome</string>
+    <string name="register_user">Usuário</string>
+    <string name="register_password">Senha</string>
+    <string name="register_button_primary">Cadastrar</string>
+
+    <!-- Activity/Dashboard-->
+    <string name="dashboard_title">Dashboard</string>
+
+    <!-- VH/AV1-->
+    <string name="av1_title">Primeira Avaliação (AV1)</string>
+    <string name="av1_add_content_description">Adicionar nova AV1</string>
+
+    <!-- VH/AV2-->
+    <string name="av2_title">Segunda Avaliação (AV2)</string>
+    <string name="av2_add_content_description">Adicionar nova A2</string>
+
+    <!-- VH/AV3-->
+    <string name="av3_title">Terceira Avaliação (AV3)</string>
+    <string name="av3_add_content_description">Adicionar nova A3</string>
+
 </resources>
