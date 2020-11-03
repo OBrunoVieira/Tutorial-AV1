@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
     android:orientation="horizontal">
 
     <TextView
@@ -12,6 +13,7 @@
         android:text="@string/av2_title"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:layout_marginStart="32dp"
         app:layout_constraintEnd_toStartOf="@id/av2_image_view_add"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -38,7 +40,9 @@
         android:id="@+id/av2_recycler_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:clipToPadding="false"
         android:orientation="horizontal"
+        android:paddingStart="26dp"
         android:layout_marginTop="12dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"

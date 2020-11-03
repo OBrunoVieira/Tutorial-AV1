@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
     android:orientation="horizontal">
 
     <TextView
@@ -12,6 +14,7 @@
         android:text="@string/av1_title"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:layout_marginStart="32dp"
         app:layout_constraintEnd_toStartOf="@id/av1_image_view_add"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -24,10 +27,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:clickable="true"
-        android:focusable="true"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
         android:contentDescription="@string/av1_add_content_description"
+        android:focusable="true"
         android:src="@drawable/vector_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/av1_text_view_title"
@@ -38,11 +41,14 @@
         android:id="@+id/av1_recycler_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="12dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingStart="26dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/av1_text_view_title" />
+        app:layout_constraintTop_toBottomOf="@id/av1_text_view_title"
+        tools:listitem="@layout/vh_discipline" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,5 +2,25 @@ package com.av1.tutorial.ui.viewholder
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.av1.tutorial.models.Discipline
+import com.av1.tutorial.ui.adapter.DisciplineAdapter
+import kotlinx.android.synthetic.main.vh_av2.view.*
 
-class Av2SectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+class Av2SectionViewHolder(
+    itemView: View,
+    listener: DisciplineViewHolder.OnDisciplineClickListener,
+    evaluationListener: View.OnClickListener
+) : RecyclerView.ViewHolder(itemView) {
+    private val adapter by lazy { DisciplineAdapter(listener) }
+    var list: List<Discipline>? = null
+
+
+    init {
+        itemView.av2_image_view_add.setOnClickListener(evaluationListener)
+    }
+
+    fun bind(list: List<Discipline>) {
+        itemView.av2_recycler_view.adapter = adapter
+        adapter.submitList(list)
+    }
+}

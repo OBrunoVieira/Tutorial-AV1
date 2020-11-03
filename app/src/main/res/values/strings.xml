@@ -31,4 +31,8 @@
     <string name="av3_title">Terceira Avaliação (AV3)</string>
     <string name="av3_add_content_description">Adicionar nova A3</string>
 
+    <!--  VH/Discipline  -->
+    <string name="discipline_exam_title">Prova</string>
+    <string name="discipline_aps_title">APS</string>
+
 </resources>
